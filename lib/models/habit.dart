@@ -182,22 +182,6 @@ class Habit extends Equatable {
     return data;
   }
 
-  static Habit createHabit(String key) {
-    return Habit(
-      id: 'id__$key',
-      name: 'name__$key',
-      iconPath: 'assets/images/tab_1.png',
-      mainColor: 122,
-      mark: 'mark__$key',
-      remindTimes: ['time1', 'time2'],
-      period: 1,
-      createTime: 1111,
-      modifyTime: 0,
-      completed: false,
-      doNum: 0,
-    );
-  }
-
   @override
   List<Object> get props => [
         this.id,

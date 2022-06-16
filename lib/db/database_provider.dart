@@ -25,7 +25,7 @@ class DatabaseProvider {
 
   Future<Database> createDatabase() async {
     String dbPath = await getDatabasesPath();
-
+    // print('db location:' + dbPath);
     return await openDatabase(
       join(dbPath, 'habitDB.db'),
       version: 1,
